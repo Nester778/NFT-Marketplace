@@ -14,7 +14,7 @@ import RankingsPage from './components/RankingsPage/RankingsPage';
 function App() {
   return (
     <>
-      <Router>
+      <Router basename="/NFT-Marketplace">
         <NavBar />
         <div>
           <Routes>
