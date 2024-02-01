@@ -18,13 +18,13 @@ function App() {
         <NavBar />
         <div>
           <Routes>
-            <Route path="/" exact element={<MainPage />} />
-            <Route path="/marketplace" element={<MarketplacePage />} />
-            <Route path="/rankings" element={<RankingsPage />} />
-            <Route path="/connect-wallet" element={<ConnectWalletPage />} />
-            <Route path="/create-acc" element={<CreateAccPage />} />
-            <Route path="/artist" element={<ArtistPage />} />
-            <Route path="/nft" element={<NFTPage />} />
+            <Route path="/" element={<MainPage key="main" />} />
+            <Route path="/marketplace" element={<MarketplacePage key="marketplace" />} />
+            <Route path="/rankings" element={<RankingsPage key="rankings" />} />
+            <Route path="/connect-wallet" element={<ConnectWalletPage key="connect-wallet" />} />
+            <Route path="/create-acc" element={<CreateAccPage key="create-acc" />} />
+            <Route path="/artist" element={<ArtistPage key="artist" />} />
+            <Route path="/nft" element={<NFTPage key="nft" />} />
           </Routes>
         </div>
         <Footer />
