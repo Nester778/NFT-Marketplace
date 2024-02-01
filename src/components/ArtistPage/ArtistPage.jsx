@@ -1,4 +1,5 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
+import { useLocation } from 'react-router-dom';
 import copy from 'clipboard-copy';
 
 import bgImg from "./../../img/artistPage/BgImg.jpg";
@@ -188,6 +189,12 @@ export default function ArtistPage() {
                 return null;
         }
     };
+
+    const { pathname } = useLocation();
+
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, [pathname]);
 
     return (
         <section className="artistPage">

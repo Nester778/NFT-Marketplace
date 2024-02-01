@@ -1,4 +1,5 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
+import { useLocation } from 'react-router-dom';
 
 import imgCard1 from "./../../img/discover/card1/img.jpg";
 import avatarCard1 from "./../../img/discover/card1/avatar.svg";
@@ -164,6 +165,12 @@ export default function MarketplacePage() {
                 return null;
         }
     };
+
+    const { pathname } = useLocation();
+
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, [pathname]);
 
     return (
         <section className="marketplacePage">

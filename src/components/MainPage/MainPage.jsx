@@ -1,3 +1,6 @@
+import React, { useEffect } from 'react';
+import { useLocation } from 'react-router-dom';
+
 import Categories from "../Categories/Categories";
 import Collection from "../Collection/Collection";
 import Creators from "../Creators/Creators";
@@ -9,6 +12,11 @@ import Join from "../Join/Join";
 
 
 export default function MainPage() {
+    const { pathname } = useLocation();
+
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, [pathname]);
     return (
         <main>
             <Hero />

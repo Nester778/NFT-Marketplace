@@ -1,4 +1,5 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
+import { useLocation } from 'react-router-dom';
 
 import avatar1 from "./../../img/rankingsPage/Avatar1.svg";
 import avatar2 from "./../../img/rankingsPage/Avatar2.svg";
@@ -195,6 +196,11 @@ export default function RankingsPage() {
         },
     ];
 
+    const { pathname } = useLocation();
+
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, [pathname]);
     return (
         <section className="rankings">
             <div className="container">

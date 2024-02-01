@@ -1,3 +1,6 @@
+import React, { useState, useEffect } from 'react';
+import { useLocation } from 'react-router-dom';
+
 import img from "./../../img/createAccPage/Img.png";
 import userIcon from "./../../img/icon/UserGray.svg";
 import envelope from "./../../img/icon/EnvelopeGray.svg";
@@ -6,6 +9,12 @@ import lock from "./../../img/icon/LockKeyGray.svg";
 import "./createAccPage.css";
 
 export default function CreateAccPage() {
+    const { pathname } = useLocation();
+
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, [pathname]);
+
     return (
         <section className="createAcc">
             <div className="createAcc__img">

@@ -1,3 +1,6 @@
+import React, { useEffect } from 'react';
+import { useLocation } from 'react-router-dom';
+
 import img from "./../../img/nftPage/Img.jpg";
 import Timer from '../Timer/Timer';
 import avatar from "./../../img/nftPage/Avatar.svg";
@@ -111,6 +114,13 @@ export default function NFTPage() {
             highestBit: "0.33",
         },
     ]
+
+    const { pathname } = useLocation();
+
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, [pathname]);
+
     return (
         <section className="NFTPage">
             <dir className="NFTPage__bg-img">

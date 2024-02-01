@@ -1,3 +1,6 @@
+import React, { useEffect } from 'react';
+import { useLocation } from 'react-router-dom';
+
 import ConnectWalletBtn from "../ConnectWalletBtn/ConnectWalletBtn";
 import Metamask from "./../../img/icon/metamask.svg";
 import WalletConn from "./../../img/icon/WalletConnect.svg";
@@ -21,6 +24,13 @@ export default function ConnectWalletPage() {
             name: "Coinbase",
         },
     ];
+
+    const { pathname } = useLocation();
+
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, [pathname]);
+
     return (
         <section className="connectWallet">
             <div className="connectWallet__img">
