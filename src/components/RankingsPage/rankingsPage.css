@@ -1,0 +1,94 @@
+.rankings__title {
+    padding: 80px 0;
+}
+
+.rankings__title h2 {
+    font-weight: 600;
+    line-height: 110%;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+}
+
+.rankings__title h5 {
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%;
+}
+
+.artistPage__rankings-cards {
+    padding: 40px 0;
+}
+
+.artistPage__rankings-titles {
+    display: flex;
+    justify-content: space-between;
+
+    padding: 12px 20px;
+
+    border-radius: 20px;
+    border: 1px solid var(--bgcSecondary);
+
+    margin-bottom: 20px;
+}
+
+.artistPage__rankings-titles p {
+    color: var(--captionLabelText);
+
+    font-weight: 400;
+    line-height: 140%;
+}
+
+.artistPage__rankings-titles-left {
+    display: flex;
+    column-gap: 20px;
+    padding-left: 10px;
+}
+
+.artistPage__rankings-titles-right {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 20px;
+    grid-row-gap: 0px;
+}
+
+.artistPage__categories-btn-short {
+    display: none;
+}
+
+@media (max-width: 835px) {
+    .rankings__title {
+        padding: 40px 0;
+    }
+
+    .rankings__title h2 {
+        font-size: 38px;
+        font-weight: 600;
+        line-height: 120%;
+    }
+
+    .rankings__title h5 {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 140%;
+    }
+
+    .artistPage__rankings-titles-right {
+        grid-template-columns: repeat(2, 1fr);
+        grid-column-gap: 55px;
+    }
+}
+
+@media (max-width: 500px) {
+    .artistPage__rankings-titles-right {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .artistPage__categories-btn-long {
+        display: none;
+    }
+
+    .artistPage__categories-btn-short {
+        display: inline-block;
+    }
+}

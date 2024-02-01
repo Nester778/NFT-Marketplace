@@ -1,0 +1,35 @@
+:root {
+    --bgc: #2B2B2B;
+    --btnColor: #A259FF;
+    --blueGradient: linear-gradient(128deg, #A259FF 49.75%, #377DF7 136.56%);
+    --redGradient: linear-gradient(101deg, #A259FF 13.57%, #FF6250 97.65%);
+    --bgcSecondary: #3B3B3B;
+    --captionLabelText: #858584;
+    --text: #fff;
+}
+
+body {
+    font-family: "Work Sans";
+    background-color: var(--bgc);
+    color: var(--text);
+}
+
+.container {
+    max-width: 1080px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+.nav-container {
+    max-width: 1210px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+@media (max-width: 835px) {
+    .container {
+        max-width: 1080px;
+        padding: 0 15px;
+        margin: 0 auto;
+    }
+}

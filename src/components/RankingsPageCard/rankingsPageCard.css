@@ -1,0 +1,124 @@
+.rankingsPageCard {
+    padding: 12px 20px;
+    display: flex;
+    justify-content: space-between;
+    color: var(--text);
+    background-color: var(--bgcSecondary);
+    margin-bottom: 20px;
+    border-radius: 20px;
+}
+
+.rankingsPageCard__artist-wrapper {
+    display: flex;
+    column-gap: 20px;
+    align-items: center;
+    column-gap: 15px;
+}
+
+.rankingsPageCard__number {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 30px;
+    height: 30px;
+
+    background-color: var(--bgc);
+    color: var(--captionLabelText);
+    border-radius: 50%;
+
+    font-family: "Space Mono";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+}
+
+.rankingsPageCard__artist-wrapper img {
+    width: 60px;
+    height: 60px;
+
+    border-radius: 50px;
+}
+
+.rankingsPageCard__artist-wrapper h5 {
+    font-weight: 600;
+    line-height: 140%;
+    text-transform: capitalize;
+}
+
+.rankingsPageCard__content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 20px;
+    grid-row-gap: 0px;
+
+    align-items: center;
+}
+
+.rankingsPageCard__content-change p {
+    color: #00AC4F;
+
+    font-family: "Space Mono";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+}
+
+.rankingsPageCard__content-sold p {
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+}
+
+.rankingsPageCard__content-volume p {
+    margin-right: auto;
+    font-family: "Space Mono";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+}
+
+@media (max-width: 835px) {
+    .rankingsPageCard__number {
+        background-color: rgba(0, 0, 0, 0);
+    }
+
+    .rankingsPageCard__artist-wrapper img {
+        width: 24px;
+        height: 24px;
+    }
+
+    .collapse-sold {
+        display: none;
+    }
+
+    .rankingsPageCard__content {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 500px) {
+    .rankingsPageCard__content {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .collapse-change {
+        display: none;
+    }
+
+    .rankingsPageCard__artist-wrapper h5 {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 140%;
+    }
+
+    .rankingsPageCard__content-volume p {
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 110%;
+    }
+}

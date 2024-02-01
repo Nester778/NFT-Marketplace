@@ -1,0 +1,28 @@
+.ConnectWallet__btn {
+    display: flex;
+    column-gap: 20px;
+
+    padding: 16px 0 16px 40px;
+
+    height: 72px;
+    width: 100%;
+    min-width: 300px;
+
+    background-color: var(--bgcSecondary);
+    border: 1px solid var(--btnColor, #A259FF);
+    border-radius: 20px;
+    color: var(--text);
+
+    margin-bottom: 20px;
+}
+
+@media (max-width:835px) {
+    .ConnectWallet__btn {
+        height: 60px;
+    }
+
+    .ConnectWallet__btn img {
+        height: 32px;
+        width: 32px;
+    }
+}

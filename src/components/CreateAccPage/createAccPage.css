@@ -1,0 +1,150 @@
+.createAcc {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 60px;
+}
+
+.createAcc__img {
+    overflow: hidden;
+    height: 690px;
+}
+
+.createAcc__img img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.createAcc__content-wrapper {
+    height: auto;
+    margin: auto 0;
+    padding-right: 15px;
+    max-width: 460px;
+}
+
+
+.createAcc__content h2 {
+    font-size: 51px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 110%;
+    text-transform: capitalize;
+
+    margin-bottom: 20px;
+}
+
+.createAcc__content h5 {
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%;
+    text-transform: capitalize;
+    margin-bottom: 40px;
+}
+
+.createAcc__form {
+    max-width: 330px;
+}
+
+.createAcc__form-input {
+    display: flex;
+    column-gap: 12px;
+
+    height: 46px;
+    max-width: 100%;
+
+    padding: 16px 20px;
+
+    border-radius: 20px;
+    background-color: #fff;
+
+    margin-bottom: 15px;
+}
+
+.createAcc__form-input input {
+    color: var(--bgc);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+}
+
+.createAcc__form-btn {
+
+    height: 46px;
+    width: 100%;
+
+    margin-top: 15px;
+
+
+    background-color: var(--btnColor);
+    border-radius: 20px;
+
+    text-align: center;
+    font-family: "Work Sans";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 140%;
+    transition: all 500ms ease;
+}
+
+.createAcc__form-btn:hover {
+    background: rgba(0, 0, 0, 0);
+    color: var(--btnColor);
+    box-shadow: inset 0 0 0 3px var(--btnColor);
+}
+
+.createAcc__form-btn:active {
+    background: rgba(0, 0, 0, 0);
+    color: #ff0000;
+    box-shadow: inset 0 0 0 3px #ff0000;
+}
+
+@media (max-width: 835px) {
+    .createAcc {
+        grid-column-gap: 40px;
+    }
+
+    .createAcc__img {
+        height: 610px;
+    }
+
+    .createAcc__content h2 {
+        font-size: 38px;
+        font-weight: 600;
+        line-height: 120%;
+    }
+
+    .createAcc__content h5 {
+        font-size: 16px;
+        line-height: 140%;
+    }
+}
+
+@media (max-width: 500px) {
+    .createAcc__img {
+        height: 230px;
+    }
+
+    .createAcc {
+        display: block;
+    }
+
+    .createAcc__content-wrapper {
+        padding: 30px 30px;
+        margin: 0 auto;
+    }
+
+    .createAcc__content h2 {
+        text-align: center;
+    }
+
+    .createAcc__content h5 {
+        text-align: center;
+    }
+
+    .createAcc__form {
+        max-width: 100%;
+    }
+}

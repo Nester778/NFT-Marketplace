@@ -1,0 +1,110 @@
+.creatorsCard {
+    position: relative;
+    border-radius: 20px;
+    background-color: var(--bgcSecondary);
+    color: var(--text);
+    padding: 20px;
+    justify-content: center;
+}
+
+.creatorsCard__number {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 20px;
+    left: 20px;
+    width: 30px;
+    height: 30px;
+    background-color: var(--bgc);
+    border-radius: 50%;
+}
+
+.creatorsCard__number p {
+    color: var(--captionLabelText);
+    font-family: "Space Mono";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+}
+
+.creatorsCard__img-wrapper,
+.creatorsCard h5,
+.creatorsCard p {
+    margin: 0 auto;
+}
+
+.creatorsCard__img-wrapper {
+    overflow: hidden;
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+}
+
+.creatorsCard__img-wrapper img {
+
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    transition: all 500ms ease;
+}
+
+.creatorsCard:hover .creatorsCard__img-wrapper img {
+    transform: scale(1.1);
+}
+
+.creatorsCard:active .creatorsCard__img-wrapper img {
+    transform: scale(0.98);
+}
+
+.creatorsCard__content-wrapper {
+    text-align: center;
+}
+
+.creatorsCard h5 {
+    margin-top: 20px;
+    margin-bottom: 5px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 140%;
+    text-transform: capitalize;
+}
+
+.creatorsCard p {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+}
+
+.creatorsCard p span {
+    color: var(--captionLabelText);
+    text-align: right;
+}
+
+@media (max-width: 835px) {
+    .creatorsCard__number {
+        top: 13px;
+        left: 13px
+    }
+
+    .creatorsCard__img-wrapper,
+    .creatorsCard h5,
+    .creatorsCard p {
+        margin: 0;
+    }
+
+    .creatorsCard__img-wrapper {
+        width: 60px;
+        height: 60px;
+    }
+
+    .creatorsCard__content-wrapper {
+        display: flex;
+        column-gap: 20px;
+        text-align: left;
+        align-items: center;
+    }
+}

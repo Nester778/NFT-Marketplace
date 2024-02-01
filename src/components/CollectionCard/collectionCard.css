@@ -1,0 +1,103 @@
+.collectionCard img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    transition: all 500ms ease;
+}
+
+.collectionCard:hover img {
+    transform: scale(1.1);
+}
+
+.collectionCard:hover .collectionCard__creator img {
+    transform: scale(1);
+}
+
+.collectionCard:active {
+    transform: scale(0.98);
+}
+
+.collectionCard__main-img-wrapper {
+    position: relative;
+    height: 330px;
+    overflow: hidden;
+    transition: all 500ms ease;
+    border-radius: 20px;
+}
+
+.collectionCard__secondary-imgs {
+    padding: 15px 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 15px;
+    grid-row-gap: 0px;
+}
+
+.collectionCard__secondary-img-wrapper {
+    overflow: hidden;
+    border-radius: 20px;
+}
+
+.collectionCard__secondary-img-wrapper img {
+    overflow: hidden;
+}
+
+.collectionCard__quantity {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    background-color: var(--btnColor);
+    color: var(--text);
+
+    font-family: "Space Mono";
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 160%;
+
+    transition: all 500ms ease;
+}
+
+.collectionCard:hover .collectionCard__quantity {
+    background-color: rgba(0, 0, 0, 0);
+    box-shadow: inset 0 0 0 3px var(--btnColor);
+    color: var(--btnColor);
+}
+
+.collectionCard__title {
+    font-style: normal;
+    font-weight: 600;
+    line-height: 140%;
+    color: var(--text);
+
+    transition: all 500ms ease;
+}
+
+.collectionCard__title:hover {
+    color: var(--btnColor);
+}
+
+.collectionCard__creator {
+    margin-top: 10px;
+    display: flex;
+    column-gap: 12px;
+    align-items: center;
+    color: var(--text);
+}
+
+.collectionCard__creator img {
+    height: 24px;
+    width: 24px;
+    border-radius: 50%;
+}
+
+.collectionCard__creator p {
+    line-height: 140%;
+}
+
+.collectionCard__creator:hover {
+    text-decoration: underline;
+}

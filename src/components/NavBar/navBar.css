@@ -1,0 +1,120 @@
+.navBar {
+    max-width: 1180px;
+    margin: 0 auto;
+    padding: 20px 15px;
+}
+
+.navBar__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navBar__item {
+    display: flex;
+    column-gap: 10px;
+    align-items: center;
+}
+
+.navBar__item.show {
+    max-height: 500px;
+}
+
+.navBar__item.unshow {
+    padding: 0;
+}
+
+.navBar__item a {
+    color: var(--text);
+}
+
+.navBar__item-link {
+    padding: 0 20px;
+}
+
+.navBar__item-btn {
+    display: flex;
+    column-gap: 12px;
+    justify-content: center;
+
+    width: 150px;
+    padding: 20px 0;
+
+    border-radius: 20px;
+    background-color: var(--btnColor);
+    transition: all 500ms ease;
+}
+
+.navBar__item-btn-img path {
+    transition: all 500ms ease;
+}
+
+.navBar__item-btn:hover {
+    background: rgba(0, 0, 0, 0);
+    color: var(--btnColor);
+    box-shadow: inset 0 0 0 3px var(--btnColor);
+}
+
+.navBar__item-btn:hover .navBar__item-btn-img path {
+    fill: var(--btnColor);
+}
+
+.navBar__item-btn:active {
+    background: rgba(0, 0, 0, 0);
+    color: #ff0000;
+    box-shadow: inset 0 0 0 3px #ff0000;
+}
+
+.navBar__item-btn:active .navBar__item-btn-img path {
+    fill: #ff0000;
+}
+
+.navBar__item-burger {
+    display: none;
+}
+
+@media (min-width: 845px) {
+    .navBar__item-wrapper {
+        display: none;
+    }
+}
+
+@media (max-width: 845px) {
+    .collapse {
+        display: none !important;
+    }
+
+    .navBar__item-burger {
+        display: inline-block;
+    }
+
+    .navBar__item {
+        display: block;
+
+        margin-top: 10px;
+        padding: 20px;
+        background-color: var(--bgcSecondary);
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+
+        transition: all 0.3s ease-in-out;
+        max-height: 0;
+        overflow: hidden;
+    }
+
+    .navBar__item-link {
+        display: block;
+        padding: 10px 0;
+
+    }
+
+    .navBar__item-btn {
+        padding: 10px 0;
+        margin-top: 10px;
+    }
+
+    .navBar__item-wrapper {
+        display: flex;
+        justify-content: end;
+    }
+}

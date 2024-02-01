@@ -1,0 +1,72 @@
+.howItWorksCard {
+    padding: 10px 30px 30px 30px;
+    background-color: var(--bgcSecondary);
+    color: var(--text);
+    border-radius: 20px;
+}
+
+.howItWorksCard-img {
+    object-fit: cover;
+}
+
+.howItWorksCard-img img {
+    overflow: hidden;
+    transition: all 500ms ease;
+}
+
+.howItWorksCard:hover .howItWorksCard-img img {
+    transform: scale(1.1);
+}
+
+.howItWorksCard:active .howItWorksCard-img img {
+    transform: scale(0.98);
+}
+
+.howItWorksCard h5 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    text-align: center;
+    font-weight: 600;
+    line-height: 140%;
+    text-transform: capitalize;
+}
+
+.howItWorksCard p {
+    text-align: center;
+    font-weight: 400;
+    line-height: 140%;
+}
+
+@media (max-width:835px) {
+    .howItWorksCard {
+        padding: 10px 20px 30px 20px;
+    }
+
+    .howItWorksCard h5 {
+        font-size: 16px;
+    }
+
+    .howItWorksCard p {
+        font-size: 12px;
+    }
+}
+
+@media (max-width:476px) {
+    .howItWorksCard {
+        padding: 20px;
+    }
+
+    .howItWorksCard {
+        display: flex;
+        column-gap: 15px;
+    }
+
+    .howItWorksCard h5 {
+        margin-top: 0;
+        text-align: left;
+    }
+
+    .howItWorksCard p {
+        text-align: left;
+    }
+}

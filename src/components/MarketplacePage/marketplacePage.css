@@ -1,0 +1,117 @@
+.marketplacePage__search {
+    padding: 80px 0;
+}
+
+.marketplacePage__search h2 {
+    font-weight: 600;
+    line-height: 110%;
+    text-transform: capitalize;
+    margin-bottom: 10px;
+}
+
+.marketplacePage__search h5 {
+    font-weight: 400;
+    line-height: 160%;
+    margin-bottom: 30px;
+}
+
+.marketplacePage__search-bar {
+    padding: 18px;
+    display: flex;
+    justify-content: space-between;
+    column-gap: 26px;
+
+    border-radius: 20px;
+    border: 1px solid var(--bgcSecondary);
+}
+
+.marketplacePage__search-bar input {
+    width: 100%;
+}
+
+.marketplacePage__border {
+    border-bottom: 2px solid var(--bgcSecondary);
+}
+
+.marketplacePage__categories {
+    margin-top: 10px;
+    display: flex;
+}
+
+.active {
+    border-bottom: 2px solid var(--captionLabelText);
+}
+
+.active h5 {
+    color: var(--text) !important;
+}
+
+.active .marketplacePage__categories-btn-number {
+    background: var(--captionLabelText);
+}
+
+.marketplacePage__categories-btn {
+    display: flex;
+    align-items: center;
+
+    cursor: pointer;
+    justify-content: center;
+    column-gap: 16px;
+    height: 60px;
+    width: 100%;
+}
+
+.marketplacePage__categories-btn h5 {
+    color: var(--captionLabelText);
+}
+
+.marketplacePage__categories-btn-number {
+    padding: 5px 10px;
+    border-radius: 20px;
+    background: var(--bgcSecondary);
+}
+
+.marketplacePage__cards-wrapper {
+    padding: 80px 0;
+    background-color: var(--bgcSecondary);
+}
+
+.marketplacePage__cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    grid-column-gap: 30px;
+    grid-row-gap: 30px;
+
+}
+
+.marketplacePage__discoverCard-wrapper .discoverCard__text {
+    background-color: var(--bgc) !important;
+}
+
+@media (max-width:835px) {
+    .marketplacePage__categories-btn h5 {
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 140%;
+    }
+
+    .marketplacePage__cards {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(1, 1fr);
+        grid-column-gap: 30px;
+        grid-row-gap: 30px;
+
+    }
+}
+
+@media (max-width:475px) {
+    .marketplacePage__cards {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(1, 1fr);
+        grid-column-gap: 30px;
+        grid-row-gap: 30px;
+
+    }
+}

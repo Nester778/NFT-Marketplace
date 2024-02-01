@@ -1,0 +1,115 @@
+.discover {
+    padding: 80px 0;
+}
+
+.discover__header {
+    display: flex;
+    justify-content: space-between;
+    column-gap: 10px;
+    position: relative;
+}
+
+.discover__text h3 {
+    font-weight: 600;
+    line-height: 120%;
+    text-transform: capitalize;
+    margin-bottom: 10px;
+}
+
+.discover__text h5 {
+    font-weight: 400;
+    line-height: 160%;
+    text-transform: capitalize;
+}
+
+.discover__btn {
+    display: inline-block;
+    border: 2px solid var(--btnColor);
+    border-radius: 20px;
+    padding: 20px 50px;
+    max-height: 60px;
+    min-width: 190px;
+
+    margin-top: auto;
+
+    color: var(--text);
+    transition: all 500ms ease;
+}
+
+.discover__btn-img path {
+    transition: all 500ms ease;
+}
+
+.discover__btn:hover {
+    background-color: var(--btnColor);
+}
+
+.discover__btn:active {
+    background: rgba(0, 0, 0, 0);
+    color: #ff0000;
+    border: 2px solid #ff0000;
+}
+
+.discover__btn:active .discover__btn-img path {
+    fill: #ff0000;
+}
+
+.discover__btn p {
+    font-weight: 600;
+    line-height: 140%;
+}
+
+.discover__btn-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 12px;
+}
+
+.discover__content {
+    padding-top: 60px;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    grid-column-gap: 30px;
+}
+
+@media (max-width: 835px) {
+    .discover {
+        padding: 40px 0;
+    }
+
+    .discover__content {
+        padding-top: 40px;
+
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(1, 1fr);
+    }
+}
+
+@media (max-width: 476px) {
+    .discover__header {
+        display: inline-block;
+        width: 100%;
+    }
+
+    .discover__btn {
+        display: inline-block;
+        border: 2px solid var(--btnColor);
+        border-radius: 20px;
+        padding: 20px 50px;
+        max-height: 60px;
+        min-width: 100%;
+
+        margin-top: 40px;
+
+        color: var(--text);
+    }
+
+    .discover__content {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        grid-row-gap: 20px;
+    }
+}
