@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom';
+
 import logo from "./../../img/icon/Logo.svg";
 import discordLogo from "./../../img/icon/DiscordLogo.svg";
 import youtubeLogo from "./../../img/icon/YoutubeLogo.svg";
@@ -34,9 +36,9 @@ export default function Footer() {
                     </div>
                     <div className="footer__explore">
                         <h5>Explore</h5>
-                        <a href="#!"><p>Marketplace</p></a>
-                        <a href="#!"><p>Rankings</p></a>
-                        <a href="#!"><p>Connect a wallet</p></a>
+                        <Link to="/marketplace"><p>Marketplace</p></Link>
+                        <Link to="/rankings"><p>Rankings</p></Link>
+                        <Link to="/connect-wallet"><p>Connect a wallet</p></Link>
                     </div>
                     <div className="footer__join">
                         <h5>Join our weekly digest</h5>
